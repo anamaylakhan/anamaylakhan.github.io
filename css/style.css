@@ -106,7 +106,7 @@ nav a:hover {
   height: 100vh;
   z-index: -1;
   overflow: hidden;
-  opacity: 0.25; /* Lower opacity for elegance */
+  opacity: 0.25; /* Elegantly subtle background video */
 }
 
 .video-background iframe {
