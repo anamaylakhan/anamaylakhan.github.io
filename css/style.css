@@ -27,31 +27,4 @@ nav {
   width: 100%;
   background: white;
   padding: 16px 32px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  z-index: 1000;
-  display: flex;
-  gap: 24px;
-  font-size: 15px;
-}
-
-nav a {
-  color: #111;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.section {
-  padding: 120px 24px 60px;
-  max-width: 1300px;
-  margin: auto;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-}
+  box-shadow:
