@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
+  background-color: #fff;
+  color: #333;
   line-height: 1.7;
   font-size: 16px;
 }
@@ -52,7 +52,7 @@ nav a:hover {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Forces 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
 }
 
@@ -96,6 +96,46 @@ nav a:hover {
   padding: 0 20px 20px;
   font-size: 0.95rem;
   color: #555;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.25; /* Lower opacity for elegance */
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.overlay-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.overlay-text p {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  color: #ddd;
 }
 
 footer {
