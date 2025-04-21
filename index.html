@@ -9,6 +9,48 @@
     body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-background iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 2;
+    }
+
+    .overlay-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .overlay-text p {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
     }
 
     nav {
@@ -32,46 +74,6 @@
     nav a:hover {
       text-decoration: underline;
     }
-
-    .hero-section {
-      background: #fff;
-      padding: 160px 24px 80px;
-      text-align: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 60px;
-      color: #111;
-      margin-bottom: 10px;
-    }
-
-    .hero-text p {
-      font-family: 'Inter', sans-serif;
-      font-size: 22px;
-      color: #444;
-      font-weight: 300;
-    }
-
-    .video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    .video-background iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      object-fit: cover;
-      pointer-events: none;
-    }
   </style>
 </head>
 <body>
@@ -87,13 +89,6 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="hero-section">
-    <div class="hero-text">
-      <h1>Anam Khan</h1>
-      <p>Broadcast + Digital Reporter</p>
-    </div>
-  </section>
-
   <div class="video-background">
     <iframe 
       src="https://www.youtube.com/embed/lULkaWmELmQ?autoplay=1&mute=1&controls=0&loop=1&playlist=lULkaWmELmQ&modestbranding=1&showinfo=0"
@@ -103,5 +98,6 @@
     </iframe>
   </div>
 
-</body>
-</html>
+  <div class="overlay-text">
+    <h1>Anam Khan</h1>
+    <p>Broadcast + Digital Reporter</p>
