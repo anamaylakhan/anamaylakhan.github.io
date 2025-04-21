@@ -52,8 +52,10 @@ nav a:hover {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ⬅️ This is now fixed to 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
+}
+
 }
 
 .card {
