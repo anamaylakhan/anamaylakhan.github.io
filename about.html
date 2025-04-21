@@ -1,24 +1,105 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>About | Anam Ayla Khan</title><link rel="stylesheet" href="css/style.css"></head><body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="tv.html">TV</a>
-  <a href="web.html">Web</a>
-  <a href="radio.html">Radio</a>
-  <a href="humanitarian.html">Humanitarian</a>
-  <a href="about.html">About</a>
-  <a href="resume.html">Resume</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Anam Khan</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #fdfdfd;
+    }
 
-<section class="section"><h2>About Me</h2><p>I’m from Oakville, Ontario, and my journalism journey spans nearly six years—though my love for storytelling has been lifelong.
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 12px 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 1000;
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
+    }
 
-After earning a B.A. in Visual Culture &amp; Communications at the University of Toronto and a postgraduate journalism certificate at Humber College, I dove head‑first into community reporting in Guelph. In just over three years there, I wrote more than 1,500 articles, learning what makes local communities tick and how to give everyday voices a platform.
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-For the past three years I’ve chased tight daily deadlines on television and radio in Toronto and Nova Scotia, covering everything from breaking news to long‑form features. Quick turn‑arounds and high stakes energize me, but what keeps me hooked is impact—stories that leave audiences thinking, feeling, and acting.
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-For me, the joy lies in uncovering extraordinary stories within the ordinary.
+    .about-container {
+      display: flex;
+      height: 100vh;
+      margin-top: 60px;
+    }
 
-— Anam Khan</p></section>
-<footer>© 2025 Anam Ayla Khan</footer></body></html>
+    .about-photo {
+      flex: 1;
+      background: url('anam-headshot.jpg') center center / cover no-repeat;
+    }
+
+    .about-text {
+      flex: 1;
+      padding: 80px 60px;
+      font-size: 22px;
+      line-height: 1.8;
+      color: #333;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .about-text blockquote {
+      font-style: italic;
+      font-weight: 500;
+      margin: 0;
+      position: relative;
+    }
+
+    .about-text blockquote::before {
+      content: open-quote;
+      font-size: 48px;
+      color: #bbb;
+      position: absolute;
+      left: -30px;
+      top: -20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tv.html">TV</a>
+    <a href="web.html">Web</a>
+    <a href="radio.html">Radio</a>
+    <a href="humanitarian.html">Humanitarian</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="about-container">
+    <div class="about-photo"></div>
+    <div class="about-text">
+      <blockquote>
+      I’m from Oakville, Ontario, and my journalism journey spans nearly six years—though my love for storytelling has been lifelong. After earning a B.A. in Visual Culture & Communications at the University of Toronto and a postgraduate journalism certificate at Humber College, I dove head‑first into community reporting in Guelph. In just over three years there, I wrote more than 1,500 articles, learning what makes local communities tick and how to give everyday voices a platform. For the past three years I’ve chased tight daily deadlines on television and radio in Toronto and Nova Scotia, covering everything from breaking news to long‑form features. Quick turn‑arounds and high stakes energize me, but what keeps me hooked is impact—stories that leave audiences thinking, feeling, and acting. For me, the joy lies in uncovering extraordinary stories within the ordinary. — Anam Khan
+      </blockquote>
+    </div>
+  </div>
+
+</body>
+</html>
+
