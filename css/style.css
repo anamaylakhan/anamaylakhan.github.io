@@ -147,3 +147,46 @@ footer {
   color: #fff;
   font-size: 14px;
 }
+
+/* Make web cards match radio and TV card sizes */
+.web-card img {
+  width: 100%;
+  height: 120px; /* smaller image height */
+  object-fit: cover;
+}
+
+.web-card h3 {
+  font-size: 1rem;
+  padding: 12px 12px 6px;
+}
+
+.web-card p {
+  font-size: 0.9rem;
+  padding: 0 12px 12px;
+  color: #666;
+}
+
+/* Make sure card-grid spacing is tight */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding-top: 100px;
+}
+
+/* Consistent sizing for media cards */
+.media-card h3 {
+  font-size: 1rem;
+  padding: 12px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Consistent sizing for TV cards */
+.card h3, .card p {
+  font-size: 1rem;
+  padding: 12px;
+}
