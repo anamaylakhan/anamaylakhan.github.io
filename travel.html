@@ -1,115 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel | Anam Khan</title>
+  <link rel="stylesheet" href="css/style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: #f9f9f9;
-      color: #333;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      background: url('travelphotos/wadirum.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
 
-    nav {
-      padding: 20px;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    .overlay {
+      background: rgba(0, 0, 0, 0.5); /* dark transparent layer */
+      min-height: 100vh;
+      padding: 100px 24px 60px;
       display: flex;
-      gap: 20px;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 60px 0 20px;
-      font-size: 2.5rem;
-    }
-
-    .gallery {
+    .photo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-    }
-
-    .gallery-item img {
       width: 100%;
-      height: auto;
-      display: block;
+      max-width: 1200px;
+      margin-top: 40px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
     }
 
-    .gallery-item:hover img {
-      transform: scale(1.05);
+    .photo-grid img:hover {
+      transform: scale(1.03);
     }
 
-    .caption {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0,0,0,0.6);
-      color: white;
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.9rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 16px 32px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 1000;
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
     }
 
-    .gallery-item:hover .caption {
-      opacity: 1;
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     footer {
+      padding: 40px 20px;
       text-align: center;
-      padding: 40px;
-      color: #aaa;
+      background: #111;
+      color: #fff;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
   <nav>
-<a href="index.html">Home</a>
-<a href="work.html">Work</a>
-<a href="humanitarian.html">Humanitarian</a>
-<a href="Travel.html">Travel</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="humanitarian.html">Humanitarian</a>
+    <a href="travel.html">Travel</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <h1>Postcards from the Road</h1>
+  <div class="overlay">
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; margin-bottom: 20px;">Travel Photography</h1>
 
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="travelphotos/bosnia1.jpg">
-      <div class="caption">Tuzla, Bosnia — Summer 2023</div>
-    </div>
-    <div class="gallery-item">
-      <img src="travelphotos/sarajevo.jpg">
-      <div class="caption">Sarajevo skyline at dusk</div>
-    </div>
-    <div class="gallery-item">
-      <img src="travelphotos/lisbon-tram.jpg">
-      <div class="caption">The yellow tram, Lisbon</div>
+    <div class="photo-grid">
+      <img src="travelphotos/photo1.jpg" alt="Travel photo 1">
+      <img src="travelphotos/photo2.jpg" alt="Travel photo 2">
+      <img src="travelphotos/photo3.jpg" alt="Travel photo 3">
+      <img src="travelphotos/photo4.jpg" alt="Travel photo 4">
+      <img src="travelphotos/photo5.jpg" alt="Travel photo 5">
     </div>
   </div>
 
