@@ -165,3 +165,86 @@ footer {
   color: #fff;
   font-size: 14px;
 }
+
+/* ─── Contact page tweaks ─── */
+main.contact {
+  /* narrow the layout so your form and text aren’t full-width */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+}
+
+main.contact h1,
+main.contact h2 {
+  /* give your headings a little more breathing room */
+  margin-bottom: 0.5em;
+  color: #111;
+}
+
+main.contact p {
+  margin-bottom: 1em;
+}
+
+main.contact .contact__intro p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+}
+
+main.contact .contact__info,
+main.contact .contact__social {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+main.contact .contact__info a,
+main.contact .contact__social a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main.contact .contact__info a:hover,
+main.contact .contact__social a:hover {
+  text-decoration: underline;
+}
+
+main.contact .form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+main.contact .form input,
+main.contact .form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+main.contact .form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main.contact .form button:hover {
+  background: #005fa3;
+}
+
+main.contact .social__list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+main.contact .social__list li {
+  list-style: none;
+}
