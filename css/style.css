@@ -165,35 +165,38 @@ footer {
   color: #fff;
   font-size: 14px;
 }
+
 /* Demo reels below About page */
-.demo-reels {
+.section.demo-reels {
   padding: 60px 24px;
   background-color: #fff;
   text-align: center;
 }
 
-.demo-reels h2 {
+.section.demo-reels h2 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
 }
 
-.reel-grid {
+.section.demo-reels .reel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 32px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.reel-grid .reel {
+.section.demo-reels .reel {
   position: relative;
-  /* for an intrinsic 16:9 aspect ratio container */
-  padding-top: 56.25%;
-  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
   border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 8px 16px rgba(0,0,0,0.05);
 }
 
-.reel-grid .reel iframe {
+.section.demo-reels .reel iframe {
   position: absolute;
   top: 0;
   left: 0;
